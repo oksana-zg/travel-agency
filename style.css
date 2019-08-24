@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #2a284f;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.logo {
+    background: url(images/logo.png) center center/contain no-repeat;
+    padding: 30px;
+}
+
+.header a {
+    color: aliceblue;
+    margin: 0 15px;  
+}
+
+.nav-img {
+    background: url(images/orig.jpg) center center/cover no-repeat;
+    color: white;
+    display: flex;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.nav-img h1 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.nav-img a {
+    color: white;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button a {
+    background-color: #2a284f;
+    padding: 10px 15px;
+    border: 2px solid orange;
+    color: white;
+    font-size: 20px;
+}
+
+.social {
+    background: url(images/soc-ikonki.JPG) center center/ contain no-repeat;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    padding: 5px;
+}
+
+.bottom-img {
+    background: #2a284f;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.main {
+    padding: 35px;
+    border: 2px solid #2a284f;
+}
+
+.main p {
+    margin: 20px 0;
+}
+
+.button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2a284f;
+    height: 200px;
+}
+
+.button2 h2 {
+    margin-bottom: 10px;
+}
+
+.button2-center a {
+    padding: 8px 60px;
+    border: 3px solid orange;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-nav img {
+    height: 100px;
+}
+
+.section-nav {
+    border: 2px solid #2a284f;
+    padding: 40px;
+    width: 33.3333%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer {
+    background: #2a284f;
+    padding: 40px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contacts {
+    color: white;
+}
+
+.footer-logo {
+    background: url(images/logo.png) center center/ contain no-repeat;
+    padding: 90px;
+}
+
+.footer-nav a {
+    color: white;
+    margin-left: auto;
+}
+
+.footer-nav {
+    text-align: right;
+}
+
+/* прокрутка */
+
+.arrow {
+    background: url(images/up-arrow.svg) center center/contain no-repeat;
+    padding: 25px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    filter: grayscale(100%)
+    /* grayscale(100%)- делает изображение чёрно-белым 
+    grayscale(0%)- возвращает цвет
+    blur (4px)- размытость изображения*/
+}
+
+.arrow:hover {
+    filter: grayscale(0%);
+}
+
+/* всплывающее окно (низ) */
+
+@keyframes window {
+    100% {
+        transform: translateY(150px);
+    }
+}
+
+.window {
+    background: #2a284fee;
+    border: 1px solid #2a284f;
+    max-width: 1150px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    animation: window 1s linear forwards reverse;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.window-logo {
+    background: url(images/cookie.svg) center center/ contain no-repeat;
+    padding: 35px;
+    color: white;
+}
+
+.window-text {
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.window-button {
+    color: white;
+    background: orange;
+    font-size: 24px;
+    padding: 8px 60px;
+    border: 2.8px ridge black;
+}
+
+.window-cross-button {
+    background: url(images/cross-remove-sign.svg) center center/ contain no-repeat;
+    color: white;
+    padding: 11px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
